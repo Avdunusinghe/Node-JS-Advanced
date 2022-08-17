@@ -1,11 +1,22 @@
 {
-  "name": "rest-api-js-developer",
+  "name": "Rest-Api-JS-Developer",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "license": "MIT",
+  "description": "Js Professional",
+  "author": "Ashen Dunusinghe",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon --exec babel-node src/app.js"
   },
-  "author": "",
-  "license": "ISC"
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/node": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "pino": "^8.4.1",
+    "pino-pretty": "^9.0.1"
+  }
 }
